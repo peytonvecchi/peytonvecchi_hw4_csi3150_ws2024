@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+  
+.filter-container {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+  
+.filter-container label {
+    margin-right: 2px;
+}
+  
+.filter-container input,
+.filter-container select,
+.filter-container button {
+  padding: 2px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 2rem;
+}
+
+.filter-container button {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.filter-container button:hover {
+  background-color: #45a049;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+    width: 40rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.card p {
+  margin: 10px;
+}
+
+.card p:first-child {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.card p:nth-child(2) {
+  color: #777;
+}
+
+.card p:last-child {
+  font-weight: bold;
+  color: #45aa1d;
+}
+
+.no-results {
+  color: #e44d26;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+body > div.filter-container > div.filter-field > button.clear-filters {
+  background-color: #FF6961;
+  transition: background 0s ease;
+}
+
+body > div.filter-container > div.filter-field > button.clear-filters:hover {
+  background-color: #e25c55;
+}
+
+.filter-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-field select {
+  height: 70px;
+  width: 120px;
+
+}
+
+.buttons {
+  flex-basis: 100%;
+}
+
+.buttons button{
+  width: 120px;
+}
+
+.filter-container h2 {
+  flex-basis: 100%;
+  margin-bottom: -5px;
+}
+  
